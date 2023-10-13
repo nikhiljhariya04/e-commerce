@@ -1,0 +1,259 @@
+/* Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Main Container */
+.container {
+  background-color: rgb(234, 234, 234);
+  width: 95%;
+  height: 97%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Navigation */
+nav {
+  background-color: white;
+  color: rgb(9, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+}
+
+nav i {
+  font-size: 25px;
+  color: rgb(7, 0, 0);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav i:hover {
+  color: rgb(78, 248, 100);
+  transform: scale(1.2);
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav .fa-house {
+  margin-right: auto;
+}
+nav .fa-circle-play {
+  margin-right: 1rem;
+}
+
+/* Search Box */
+.search_box {
+  border: 1px solid rgb(5, 0, 0);
+  border-radius: 40px;
+  display: flex;
+  padding: 5px;
+}
+
+.fa-magnifying-glass {
+  font-size: 18px;
+  padding-top: 3px;
+}
+
+.search_bar {
+  width: 95%;
+  border-radius: 40px;
+  padding-right: 20px;
+}
+
+/* Hero Sectio */
+
+.hero_container {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: white;
+  padding: 10px;
+  max-width: 97%;
+  max-height: 20%;
+  position: relative;
+}
+.hero_container i {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*Adjust for vertical centering*/
+}
+.hero_container i.fa-angle-left {
+  left: 10px;
+}
+.hero_container i.fa-angle-right {
+  right: 10px;
+}
+.hero_icon {
+  position: relative;
+}
+.icon_box {
+  width: 75px;
+  height: 190px;
+  background-color: rgba(249, 246, 246, 0);
+  /* opacity: 0.8; Set the desired opacity value (between 0 and 1) */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /*Adjust for vertical centering*/
+}
+.icon_box:hover {
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.icon_box_left {
+  left: 10px;
+}
+.icon_box_right {
+  right: 10px;
+}
+.hero_image {
+  max-width: 100%;
+  max-height: 250px;
+}
+.hero_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Product Head Container*/
+.product_list {
+  width: 97%;
+  height: 40%;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: white;
+  padding: 10px;
+  margin: 18px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+}
+.product_box i {
+  font-size: 200%;
+  color: black;
+  padding: 10px;
+}
+.product_box,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Post Styles */
+
+.post_main_container {
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.post_container {
+  border: 1px solid white;
+  background-color: white;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 100%;
+  height: 600px;
+}
+.post_head {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  word-spacing: normal;
+}
+.fa-ellipsis-vertical {
+  margin-left: auto;
+}
+.fa-circle-user {
+  font-size: 25px;
+}
+.post_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+  width: 100%;
+  height: 500px;
+}
+.post_body img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.post_footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Product Models Container*/
+.product_model_container {
+  max-width: 100%;
+  max-height: 100%;
+  /* border: 1px solid black; */
+}
+.product_model {
+  /* border: 1px solid black; */
+  width: calc(100% - 20px); /* Adjusted width calculation */
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 7px;
+  /* overflow: auto; */
+}
+.product_images {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product_img_cont {
+  width: 100%;
+  height: 150px;
+}
+.product_img_cont img {
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.product_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+/**/
+.profile {
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
